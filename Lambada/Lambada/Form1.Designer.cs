@@ -41,18 +41,20 @@
             this.Zad7RB = new System.Windows.Forms.RadioButton();
             this.Zad8RB = new System.Windows.Forms.RadioButton();
             this.Zad9RB = new System.Windows.Forms.RadioButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // xTB
             // 
-            this.xTB.Location = new System.Drawing.Point(46, 111);
+            this.xTB.Location = new System.Drawing.Point(122, 57);
             this.xTB.Name = "xTB";
-            this.xTB.Size = new System.Drawing.Size(100, 20);
+            this.xTB.Size = new System.Drawing.Size(127, 20);
             this.xTB.TabIndex = 0;
             // 
             // ObliczbBTN
             // 
-            this.ObliczbBTN.Location = new System.Drawing.Point(174, 202);
+            this.ObliczbBTN.Location = new System.Drawing.Point(174, 123);
             this.ObliczbBTN.Name = "ObliczbBTN";
             this.ObliczbBTN.Size = new System.Drawing.Size(75, 23);
             this.ObliczbBTN.TabIndex = 1;
@@ -62,14 +64,14 @@
             // 
             // yTB
             // 
-            this.yTB.Location = new System.Drawing.Point(46, 137);
+            this.yTB.Location = new System.Drawing.Point(122, 85);
             this.yTB.Name = "yTB";
-            this.yTB.Size = new System.Drawing.Size(100, 20);
+            this.yTB.Size = new System.Drawing.Size(127, 20);
             this.yTB.TabIndex = 3;
             // 
             // wynikTB
             // 
-            this.wynikTB.Location = new System.Drawing.Point(296, 57);
+            this.wynikTB.Location = new System.Drawing.Point(255, 56);
             this.wynikTB.Name = "wynikTB";
             this.wynikTB.Size = new System.Drawing.Size(201, 168);
             this.wynikTB.TabIndex = 4;
@@ -78,7 +80,7 @@
             // Zad1RB
             // 
             this.Zad1RB.AutoSize = true;
-            this.Zad1RB.Location = new System.Drawing.Point(556, 57);
+            this.Zad1RB.Location = new System.Drawing.Point(473, 56);
             this.Zad1RB.Name = "Zad1RB";
             this.Zad1RB.Size = new System.Drawing.Size(50, 17);
             this.Zad1RB.TabIndex = 5;
@@ -89,7 +91,7 @@
             // Zad2RB
             // 
             this.Zad2RB.AutoSize = true;
-            this.Zad2RB.Location = new System.Drawing.Point(556, 81);
+            this.Zad2RB.Location = new System.Drawing.Point(473, 80);
             this.Zad2RB.Name = "Zad2RB";
             this.Zad2RB.Size = new System.Drawing.Size(50, 17);
             this.Zad2RB.TabIndex = 6;
@@ -100,7 +102,7 @@
             // Zad3RB
             // 
             this.Zad3RB.AutoSize = true;
-            this.Zad3RB.Location = new System.Drawing.Point(556, 105);
+            this.Zad3RB.Location = new System.Drawing.Point(473, 104);
             this.Zad3RB.Name = "Zad3RB";
             this.Zad3RB.Size = new System.Drawing.Size(50, 17);
             this.Zad3RB.TabIndex = 7;
@@ -111,7 +113,7 @@
             // Zad4RB
             // 
             this.Zad4RB.AutoSize = true;
-            this.Zad4RB.Location = new System.Drawing.Point(556, 129);
+            this.Zad4RB.Location = new System.Drawing.Point(473, 128);
             this.Zad4RB.Name = "Zad4RB";
             this.Zad4RB.Size = new System.Drawing.Size(50, 17);
             this.Zad4RB.TabIndex = 8;
@@ -122,7 +124,7 @@
             // Zad5RB
             // 
             this.Zad5RB.AutoSize = true;
-            this.Zad5RB.Location = new System.Drawing.Point(556, 153);
+            this.Zad5RB.Location = new System.Drawing.Point(473, 152);
             this.Zad5RB.Name = "Zad5RB";
             this.Zad5RB.Size = new System.Drawing.Size(50, 17);
             this.Zad5RB.TabIndex = 9;
@@ -133,7 +135,7 @@
             // Zad6RB
             // 
             this.Zad6RB.AutoSize = true;
-            this.Zad6RB.Location = new System.Drawing.Point(556, 177);
+            this.Zad6RB.Location = new System.Drawing.Point(473, 176);
             this.Zad6RB.Name = "Zad6RB";
             this.Zad6RB.Size = new System.Drawing.Size(50, 17);
             this.Zad6RB.TabIndex = 10;
@@ -144,7 +146,7 @@
             // Zad7RB
             // 
             this.Zad7RB.AutoSize = true;
-            this.Zad7RB.Location = new System.Drawing.Point(556, 201);
+            this.Zad7RB.Location = new System.Drawing.Point(473, 200);
             this.Zad7RB.Name = "Zad7RB";
             this.Zad7RB.Size = new System.Drawing.Size(50, 17);
             this.Zad7RB.TabIndex = 11;
@@ -155,7 +157,7 @@
             // Zad8RB
             // 
             this.Zad8RB.AutoSize = true;
-            this.Zad8RB.Location = new System.Drawing.Point(556, 225);
+            this.Zad8RB.Location = new System.Drawing.Point(473, 224);
             this.Zad8RB.Name = "Zad8RB";
             this.Zad8RB.Size = new System.Drawing.Size(50, 17);
             this.Zad8RB.TabIndex = 12;
@@ -166,7 +168,7 @@
             // Zad9RB
             // 
             this.Zad9RB.AutoSize = true;
-            this.Zad9RB.Location = new System.Drawing.Point(556, 249);
+            this.Zad9RB.Location = new System.Drawing.Point(473, 248);
             this.Zad9RB.Name = "Zad9RB";
             this.Zad9RB.Size = new System.Drawing.Size(50, 17);
             this.Zad9RB.TabIndex = 13;
@@ -174,11 +176,31 @@
             this.Zad9RB.Text = "Zad9";
             this.Zad9RB.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(98, 61);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(18, 13);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "x=";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(98, 85);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(18, 13);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "y=";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(595, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Zad9RB);
             this.Controls.Add(this.Zad8RB);
             this.Controls.Add(this.Zad7RB);
@@ -193,7 +215,7 @@
             this.Controls.Add(this.ObliczbBTN);
             this.Controls.Add(this.xTB);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Lambada";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -214,6 +236,8 @@
         private System.Windows.Forms.RadioButton Zad7RB;
         private System.Windows.Forms.RadioButton Zad8RB;
         private System.Windows.Forms.RadioButton Zad9RB;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
