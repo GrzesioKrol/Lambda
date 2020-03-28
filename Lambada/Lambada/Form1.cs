@@ -78,7 +78,28 @@ namespace Lambada
         }
         public void Zad6()
         {
+            wynikTB.Clear();
+            string s = xTB.Text;
+            String[] split;
+            split = s.Split(' ');
+            int[] liczby = new int[split.Length];
+            for (int i = 0; i < split.Length; i++)
+            {
+                liczby[i] = int.Parse(split[i]);
+            }
 
+            Array.Sort(liczby, (a,b) => b - a);
+            wynikTB.Text = "Malejąco: ";
+            for(int i = 0; i < liczby.Length; i++)
+            {
+                wynikTB.Text += liczby[i] + " ";
+            }
+            wynikTB.Text += "\nRosnąco: ";
+            Array.Sort(liczby, (a, b) => a - b);
+            for (int i = 0; i < liczby.Length; i++)
+            {
+                wynikTB.Text += liczby[i] + " ";
+            }
         }
         public void Zad7()
         {
@@ -92,7 +113,5 @@ namespace Lambada
         {
 
         }
-
-
     }
 }
