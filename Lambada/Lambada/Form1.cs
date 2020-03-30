@@ -151,10 +151,15 @@ namespace Lambada
             Func<double, double> nazwa = x => Math.Pow(x, a);
             return nazwa(double.Parse(xTB.Text));
         }
+
+        Func<double, double, double> nazwa1 = (x, a) =>
+         {
+             return Math.Pow(x, a);
+         };
         public void Zad9()
         {
             wynikTB.Clear();
-            wynikTB.Text = zad9_return(double.Parse(yTB.Text)).ToString();
+            wynikTB.Text = nazwa1(double.Parse(xTB.Text),double.Parse(yTB.Text)).ToString();
         }
     }
 }
