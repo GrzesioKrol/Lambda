@@ -64,10 +64,8 @@ namespace Lambada
                   String s = new String(a);
                   return s;
               };
-            wynikTB.Text += nazwa(int.Parse(xTB.Text)).ToString();
-                    
-        }
-     
+            wynikTB.Text += nazwa(int.Parse(xTB.Text)).ToString();                    
+        }     
         public void Zad4()
         {
             wynikTB.Clear();
@@ -79,9 +77,47 @@ namespace Lambada
                 wynikTB.Text += (i + 1) + ". " + tab[i] + "\n";
             }
         }
+        public delegate int porownaj(int a, int b);
+        public void Zad5_sortowanie(int []tablica, porownaj delegat)
+        {
+            int n = tablica.Length;
+            int tmp = 0;
+            do
+            {
+                for (int i = 0; i < n - 1; i++)
+                {
+                    if (delegat(tablica[i],tablica[i + 1])<0)
+                    {
+                        tmp = tablica[i];
+                        tablica[i] = tablica[i + 1];
+                        tablica[i + 1] = tmp;
+                    }
+                }
+                n--;
+            } while (n > 1);
+        }
         public void Zad5()
         {
-
+            wynikTB.Clear();
+            string s = xTB.Text;
+            String[] split;
+            split = s.Split(' ');
+            int[] liczby = new int[split.Length];
+            for (int i = 0; i < split.Length; i++)
+            {
+                liczby[i] = int.Parse(split[i]);
+            }
+            porownaj nazwa = (a, b) =>
+             {
+                 if (a > b) return 1;
+                 else if (b > a) return -1;
+                 else return 0;
+             };
+            Zad5_sortowanie(liczby, nazwa);
+            foreach(int a in liczby)
+            {
+                wynikTB.Text += a.ToString() + " ";
+            }
         }
         public void Zad6()
         {
